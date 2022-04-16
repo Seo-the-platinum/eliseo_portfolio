@@ -1,0 +1,65 @@
+.busterBlade {
+    background-color: black;
+    left: 110%;
+    position: relative;
+    transform: rotate(135deg) translateY(-100%);
+    transform-origin:top left;
+    width: 250px;
+    z-index: 1;
+}
+
+.busterBladeContainer {
+    display: flex;
+    max-width: 30%;
+    margin-top: 10%;
+}
+
+.lighting {
+    background: linear-gradient(to right, rgba(48, 47, 33, .7), rgba(92, 88, 66, .7), rgba(141, 139, 111, .7) 30% 70%, rgba(92, 88, 66, .7), rgba(48, 47, 33, .07));
+    filter: blur(5px);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #302f21;
+    height: 80px;
+    position: relative;
+    transform: rotate(20deg) translateY(-100%);
+    transform-origin:top left;
+    top: 18%;
+    right: 5%;
+    width: 200px;
+}
+
+.newGame {
+    align-items: center;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.newGameContainer {
+    display: flex;
+    width: 100%;
+}
+
+.newGameBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-family: ff7;
+    font-size: 64px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.shadow {
+    background-color: black;
+    border-radius: 25%;
+    box-shadow: 0px 0px 5px black;
+    left: 8%;
+    position: relative;
+    top: 6%;
+    height: 25px;
+    width: 175px;
+}

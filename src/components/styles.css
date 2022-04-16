@@ -1,14 +1,120 @@
+.aboutContainer {
+    align-items: center;
+    background:linear-gradient(to right, #070b78, #040753);
+    border-image: linear-gradient(to right, #706e70, #a1a3a6 5% 95%, #706e70) 1;
+    border-width: 5px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 90%;
+}
+
+.aboutName {
+    color: white;
+    font-family: ff7;
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        2px 2px 0 #000;
+}
+.aboutBody {
+    color: white;
+    font-family: ff7;
+    font-size: 36px;
+    text-align: center;
+    text-shadow: 
+        -2px 2px 0 #000,
+        2px -2px 0 #000,
+        2px 2px 0 #000;
+}
+.contact {
+    background: linear-gradient(to right, #070b78, #040753);
+    border-image: linear-gradient(to right, #706e70, #a1a3a6 5% 95%, #706e70) 1;
+    border-width: 5px;
+    border-style: solid;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: ff7;
+    font-size: 36px;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 5px;
+    width: 85%;
+}
+
+.contact > p {
+    margin: 0;
+    font-family: ff7;
+    font-size: 30px;
+}
+
+.contact > a {
+    color: white;
+    font-family: ff7;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.contacts {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactContainer {
+    align-items: center;
+    background: linear-gradient(to right, #070b78, #040753);
+    border-image: linear-gradient(to right, #706e70, #a1a3a6 5% 95%, #706e70) 1;
+    border-width: 5px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    width: 90%;
+}
+
+.contactHeader {
+    color: white;
+    font-family: ff7;
+    font-size: 56px;
+}
+
+.projectLink {
+    color: white;
+    font-family: ff7;
+    font-size: 36px;
+    text-decoration: none;
+}
+
 .icons {
     display: flex;
     justify-content: space-evenly;
     min-width: 40%;
 }
 
+.iconButton {
+    color: white;
+}
+
+.iconButton:hover {
+    color: #0bd38dbc;
+}
+
 .header {
     align-items: flex-end;
-    background: linear-gradient(45deg, #08fca7, #250340 60%);
+    /*background: linear-gradient(45deg, #08fca7, #250340 60%);*/
+    background:linear-gradient(to right, #070b78, #040753);
+    border-image: linear-gradient(to right, #706e70, #a1a3a6 5% 95%, #706e70) 1;
+    border-width: 5px;
+    border-style: solid;
     display:flex;
     justify-content: space-between;
+    width: 97%;
 }
 
 .header h1 {
@@ -22,11 +128,38 @@
 }
 
 .projects {
+    background:linear-gradient(to right, #070b78, #040753);
+    border-image: linear-gradient(to right, #706e70, #a1a3a6 5% 95%, #706e70) 1;
+    border-width: 5px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    max-width: 90%;
 }
 
 .project {
+    background:linear-gradient(to right, #070b78, #040753);
+    border-image: linear-gradient(to right, #706e70, #a1a3a6 5% 95%, #706e70) 1;
+    border-width: 5px;
+    border-style: solid;
     display: flex;
     flex-direction: column;
+    margin: 5%;
+    max-width: 97%;
+}
+
+.projectLinks {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.projectName {
+    color: white;
+    font-family: ff7;
+    font-size: 56px;
+    text-align: center;
+    margin: 0;
 }
 
 @media screen and (min-width: 481) and (min-width: 768px) {

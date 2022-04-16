@@ -5,9 +5,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url('./FF7Cursor.webp'), auto;
+}
+:hover {
+  cursor: url('./FF7Cursor.webp') 50 0, auto;  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: ff7;
+  src: local('FF7'), url(fonts/Final_Fantasy.ttf);
 }

@@ -9,7 +9,8 @@ import './Home.css';
 const Home = () => {
   const display = useSelector(state=> state.display.value.payload);
   return (
-    <div>
+    <div className='homeContainer'>
+      <Header/>
     {
       display === 'Projects' ? 
         <Projects/> : 

@@ -3,15 +3,20 @@ import './styles.css'
 
 const Project = (props) => {
     const { data } = props
+    const audio = new Audio('sounds/Cursor-Set.mp3')
 
+    const handleClick=()=> audio.play()
   return (
     <div className='project'>
-        <h3>{data.name}</h3>
+        <h1 className='projectName'>{data.name}</h1>
         <img src={`${data.source}`}/>
-        <a href={data.github}> Github</a>
-        {data.site ? 
-            <a href={data.site}>Website</a> : null
-        }
+        <div className='projectLinks'>
+          <a className='projectLink' href={data.github} onClick={handleClick}> Github</a>
+          {
+            data.site ? 
+              <a className='projectLink' href={data.site} onClick={handleClick}>Website</a> : null
+          }
+        </div>
     </div>
   )
 }

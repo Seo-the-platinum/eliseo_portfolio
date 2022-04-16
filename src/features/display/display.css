@@ -1,0 +1,19 @@
+
+
+.navButton {
+    background: none;
+    border: none;
+    color: white;
+    font-family: ff7;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow:
+        -1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px -1px 0 #000,
+        1px 1px 0 #000;   
+}
+
+.navButton:hover {
+    color: #0bd38dbc;
+}
