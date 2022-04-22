@@ -6,7 +6,6 @@ import {
 } from "react-router-dom";
 import NewGame from './views/newgame/NewGame'
 import Home from './views/home/Home'
-import Header from './components/Header'
 
 const App= ()=> {
   return (

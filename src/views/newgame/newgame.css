@@ -1,17 +1,20 @@
 .busterBlade {
     background-color: black;
-    left: 110%;
     position: relative;
+    left: 78%;
     transform: rotate(135deg) translateY(-100%);
     transform-origin:top left;
-    width: 250px;
+    width: 90%;
     z-index: 1;
 }
 
 .busterBladeContainer {
     display: flex;
-    max-width: 30%;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 100%;
     margin-top: 10%;
+    height: 100%;
 }
 
 .lighting {
@@ -20,12 +23,9 @@
     border-radius: 50%;
     box-shadow: 0px 0px 10px #302f21;
     height: 80px;
-    position: relative;
+    margin-top: 50%;
     transform: rotate(20deg) translateY(-100%);
     transform-origin:top left;
-    top: 18%;
-    right: 5%;
-    width: 200px;
 }
 
 .newGame {
@@ -39,6 +39,7 @@
 }
 
 .newGameContainer {
+    background-color: black;
     display: flex;
     width: 100%;
 }
@@ -50,16 +51,84 @@
     font-family: ff7;
     font-size: 64px;
     font-weight: bold;
-    margin-top: 100px;
+    margin-left: 7%;
 }
 
+.newGameBtnContainer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+}
 .shadow {
     background-color: black;
     border-radius: 25%;
     box-shadow: 0px 0px 5px black;
-    left: 8%;
     position: relative;
-    top: 6%;
+    bottom: 11%;
+    left: 36%;
     height: 25px;
     width: 175px;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .busterBlade {
+        width: 100%;
+    }
+
+    .lighting {
+        margin-top: 60%;
+    }
+
+    .newGameBtn {
+        margin-left: 4%;
+    }
+
+    .shadow {
+        bottom: 12%;
+        left: 30%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .busterBlade {
+        left: 85%;
+        width: 100%;
+    }
+
+    .newGameBtn {
+        margin-left: 3%;
+    }
+
+    .shadow {
+        bottom: 9%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .busterBlade {
+        left: 100%;
+        width: 110%;
+    }
+    .busterBladeContainer {
+        margin-top: 5%;
+    }
+    
+    .lighting {
+        height: 160px;
+        margin-top: 60%;
+        width: 400px;
+    }
+
+    .newGameBtn {
+        margin-left: 2%;
+    }
+
+    .shadow {
+        bottom: 25%;
+        left: 46%;
+        height: 50px;
+        width: 325px;
+    }
 }

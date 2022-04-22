@@ -1,3 +1,7 @@
+html, body {
+    background-color: black;
+}
+
 .aboutContainer {
     align-items: center;
     background:linear-gradient(to right, #070b78, #040753);
@@ -6,6 +10,7 @@
     border-style: solid;
     display: flex;
     flex-direction: column;
+    padding: 2%;
     margin-top: 5%;
     width: 90%;
 }
@@ -47,17 +52,23 @@
     width: 85%;
 }
 
-.contact > p {
-    margin: 0;
+.contact p {
+    color: white;
     font-family: ff7;
-    font-size: 30px;
+    font-size: 28px;
+    margin: 0;
 }
 
-.contact > a {
+.contact  a {
     color: white;
     font-family: ff7;
     font-size: 36px;
     text-decoration: none;
+}
+
+.contactLink {
+    display: flex;
+    align-items: center;
 }
 
 .contacts {
@@ -84,25 +95,31 @@
     font-size: 56px;
 }
 
+.contact#contactLinks {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#emailIcon {
+    color: #62bece;
+}
+
+.gradientDiv {
+    background: linear-gradient(to right, #1955bc, #bfbdc2);
+    border-radius: 10px;
+    height: 5px;
+    width: 100%;
+}   
+
+#green {
+    background: linear-gradient(to right, #6be969, #bfbdc2);
+}
+
 .projectLink {
     color: white;
     font-family: ff7;
     font-size: 36px;
     text-decoration: none;
-}
-
-.icons {
-    display: flex;
-    justify-content: space-evenly;
-    min-width: 40%;
-}
-
-.iconButton {
-    color: white;
-}
-
-.iconButton:hover {
-    color: #0bd38dbc;
 }
 
 .header {
@@ -127,7 +144,48 @@
         1px 1px 0 #000;
 }
 
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 40%;
+}
+
+.iconButton {
+    color: white;
+}
+
+.iconButton:hover {
+    color: #0bd38dbc;
+}
+
+.location {
+    background:linear-gradient(to right, #070b78, #040753);
+    border-image: linear-gradient(to right, #706e70, #a1a3a6 5% 95%, #706e70) 1;
+    border-width: 5px;
+    border-style: solid;
+    display: flex;
+    height: 50%;
+    left: 32%;
+    position: relative;
+    top: 5%;
+    width: 40%;
+}
+
+.location > p {
+    color: white;
+    font-family: ff7;
+    font-size: 1.5rem;
+    margin: 2%;
+    margin-left: 5%;
+}
+
+#phoneIcon {
+    color: #62bece;
+}
+
 .projects {
+    align-items: center;
     background:linear-gradient(to right, #070b78, #040753);
     border-image: linear-gradient(to right, #706e70, #a1a3a6 5% 95%, #706e70) 1;
     border-width: 5px;
@@ -135,6 +193,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 5%;
+    padding: 5%;
     max-width: 90%;
 }
 
@@ -162,6 +221,108 @@
     margin: 0;
 }
 
-@media screen and (min-width: 481) and (min-width: 768px) {
+@media screen and (min-width: 481px) {
+    .aboutBody {
+        font-size: 3rem;
+    }
 
+    .bar {
+        width: 100%;
+    }
+
+    .contact {
+        align-items: flex-end;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 90%;
+    }
+
+    .contact p {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contacts {
+        width: 100%;
+    }
+
+    #emailIcon {
+        font-size: 80px;
+    }
+
+    .location > p {
+        font-size: 2rem;
+    }
+
+    #phoneIcon {
+        font-size: 80px;
+    }
+
+    .project > img {
+        padding: 5%;
+    }
+
+    .projects {
+        width: 90%;
+    }
+
+}
+
+@media  screen and (min-width: 769px) and (max-width: 1024px) {
+
+   .contact p {
+    font-size: 3rem;
+   }
+
+   #githubId {
+    font-size: 80px;
+    }
+
+   #linkedInId {
+    font-size: 80px;
+    }
+    
+    .location > p {
+        font-size: 3rem;
+    }
+
+    .project {
+        align-items: center;
+        width: 80%;
+    }
+
+    .project > img{
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .aboutBody {
+        font-size: 4rem;
+    }
+
+    .contact p {
+        font-size: 3rem;
+    }
+    
+    #githubId {
+        font-size: 80px;
+    }
+    
+    #linkedInId {
+        font-size: 80px;
+    }
+
+    .location > p {
+        font-size: 3rem;
+    }
+
+    .project {
+        align-items: center;
+        width: 80%;
+    }
+
+    .project > img{
+        width: 75%;
+    }
 }

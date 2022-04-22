@@ -4,6 +4,7 @@ import './loading.css'
 
 const Loading = () => {
   const navigate = useNavigate()
+  
   useEffect(()=> {
     setTimeout(()=> {
       navigate('/home')
