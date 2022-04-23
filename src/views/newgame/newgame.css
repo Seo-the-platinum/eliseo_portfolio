@@ -143,15 +143,16 @@
         width: 325px;
     }
 
-    @media screen and (min-width: 320px) {
-        .busterBlade {
-            background-color: black;
-            position: relative;
-            left: 78%;
-            transform: rotate(135deg) translateY(-100%);
-            transform-origin:top left;
-            width: 90%;
-            z-index: 1;
-        }
+}
+
+@media screen and (min-width: 320px) {
+    .busterBlade {
+        background-color: black;
+        position: relative;
+        left: 78%;
+        transform: rotate(135deg) translateY(-100%);
+        transform-origin:top left;
+        width: 90%;
+        z-index: 1;
     }
 }
