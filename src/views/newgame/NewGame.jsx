@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import Loading from '../loading/Loading'
 import SoundButton from '../../features/sound/SoundButton'
 import { useSelector } from 'react-redux'
-
 import './newgame.css'
+import cursor from '../../FF7Cursor.webp'
 
 const NewGame = () => {
   const[view, setView]= useState('newGame')
@@ -28,10 +28,11 @@ const NewGame = () => {
         view === 'newGame' ?
       <div className='newGame'>
         <div className="newGameBtnContainer">
+          <img className='pointer' src={cursor}/>
           <button className='newGameBtn' onClick={newGame} name='newGame'> New Game</button>
         </div>
         <div className='busterBladeContainer'>
-          <img className='busterBlade' src={'img/Keyboard_clip_art_medium.png'}/>
+          <img className='busterBlade' src='img/Keyboard_clip_art_medium.png'/>
         <div className='lighting'></div>
         <div className='shadow'></div>
         </div>
