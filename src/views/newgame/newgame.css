@@ -109,11 +109,10 @@
     }
 
     .shadow {
-        bottom: 27%;
-        left: 45%;
+        bottom: 40%;
+        left: 35%;
         height: 50px;
         width: 325px;
-
     }
 }
 
@@ -137,8 +136,8 @@
     }
 
     .shadow {
-        bottom: 27%;
-        left: 45%;
+        bottom: 35%;
+        left: 35%;
         height: 50px;
         width: 325px;
     }
