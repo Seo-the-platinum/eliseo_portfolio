@@ -31,7 +31,7 @@ const NewGame = () => {
           <button className='newGameBtn' onClick={newGame} name='newGame'> New Game</button>
         </div>
         <div className='busterBladeContainer'>
-          <img className='busterBlade' src={'eliseo_portfolio/img/Keyboard_clip_art_medium.png'}/>
+          <img className='busterBlade' src={'img/Keyboard_clip_art_medium.png'}/>
         <div className='lighting'></div>
         <div className='shadow'></div>
         </div>

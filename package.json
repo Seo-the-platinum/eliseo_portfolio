@@ -1,7 +1,6 @@
 {
   "name": "eliseo_portfolio",
   "version": "0.1.0",
-  "homepage": "https://seo-the-platinum.github.io/eliseo_portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
