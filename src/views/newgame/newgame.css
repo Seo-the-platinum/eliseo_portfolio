@@ -13,8 +13,8 @@
     flex-direction: column;
     justify-content: flex-start;
     max-width: 100%;
-    margin-top: 10%;
-    height: 100%;
+    margin-top: 15%;
+    max-height: 100%;
 }
 
 .lighting {
@@ -66,7 +66,7 @@
     border-radius: 25%;
     box-shadow: 0px 0px 5px black;
     position: relative;
-    bottom: 9%;
+    bottom: 25%;
     left: 36%;
     height: 25px;
     width: 175px;
@@ -86,15 +86,20 @@
     }
 
     .shadow {
-        bottom: 14%;
         left: 33%;
     }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .busterBlade {
-        left: 85%;
-        width: 100%;
+        left: 100%;
+        width: 120%;
+    }
+
+    .lighting {
+        height: 160px;
+        margin-top: 70%;
+        width: 400px;
     }
 
     .newGameBtn {
@@ -102,7 +107,11 @@
     }
 
     .shadow {
-        bottom: 12%;
+        bottom: 27%;
+        left: 45%;
+        height: 50px;
+        width: 325px;
+
     }
 }
 
@@ -127,19 +136,8 @@
 
     .shadow {
         bottom: 27%;
-        left: 35%;
+        left: 45%;
         height: 50px;
         width: 325px;
-    }
-}
-@media screen and (min-width: 320px) {
-    .busterBlade {
-        background-color: black;
-        position: relative;
-        left: 78%;
-        transform: rotate(135deg) translateY(-100%);
-        transform-origin:top left;
-        width: 90%;
-        z-index: 1;
     }
 }
