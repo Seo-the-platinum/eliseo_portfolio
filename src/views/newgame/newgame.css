@@ -54,6 +54,10 @@
     margin-left: 7%;
 }
 
+.newGameBtn::before {
+    content: url(../../FF7Cursor.webp);
+}
+
 .newGameBtnContainer {
     align-items: center;
     display: flex;
