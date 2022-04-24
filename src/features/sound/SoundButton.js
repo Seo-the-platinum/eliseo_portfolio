@@ -14,7 +14,7 @@ const SoundButton = (props) => {
     }
     return (
     <div className='soundContainer' style={{position: pos === 'header' ? 'static':'absolute',}}>
-        <button className='soundButton' onClick={soundOnOff} style={{backgroundColor: pos === 'header' ? '#040753':'black',}}>
+        <button className='soundButton' onClick={soundOnOff} style={{backgroundColor: pos === 'header' ? '#040753':'black', border: 'none'}}>
             {
                 !sound ?
                 <VolumeOffIcon size={40} style={{color: 'white',}}/> : 
