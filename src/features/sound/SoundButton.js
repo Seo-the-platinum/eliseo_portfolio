@@ -3,6 +3,7 @@ import VolumeOffIcon from '@mui/icons-material/VolumeOff';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import { useDispatch, useSelector } from 'react-redux'
 import { toggleSound } from './soundButtonSlice'
+import './soundButton.css'
 
 const SoundButton = (props) => {
     const { pos } = props
@@ -12,8 +13,8 @@ const SoundButton = (props) => {
         dispatch(toggleSound(!sound))
     }
     return (
-    <div style={{backgroundColor: 'black', display: 'flex', position: pos === 'header' ? 'static':'absolute', maxHeight: '10vh', bottom: '92%', left: '85%'}}>
-        <button onClick={soundOnOff} style={{backgroundColor: pos === 'header' ? '#040753':'black', border: 'none'}}>
+    <div className='soundContainer' style={{position: pos === 'header' ? 'static':'absolute',}}>
+        <button className='soundButton' onClick={soundOnOff} style={{backgroundColor: pos === 'header' ? '#040753':'black', }}>
             {
                 !sound ?
                 <VolumeOffIcon size={40} style={{color: 'white',}}/> : 

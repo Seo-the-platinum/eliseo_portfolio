@@ -1,0 +1,12 @@
+.soundButton {
+    background-color: black;
+    border: none;
+    display: flex;
+    max-height: 10vh;
+    bottom: 92%;
+     left: 85%;
+}
+
+.soundContainer {
+    border: none;
+}
