@@ -13,8 +13,8 @@ const SoundButton = (props) => {
         dispatch(toggleSound(!sound))
     }
     return (
-    <div className='soundContainer' style={{position: pos === 'header' ? 'static':'absolute', maxHeight: '10vh', bottom: '92%', left: '85%'}}>
-        <button className='soundButton' onClick={soundOnOff} style={{backgroundColor: pos === 'header' ? '#040753':'black', border: 'none'}}>
+    <div className='soundContainer' style={{position: pos === 'header' ? 'static':'absolute',}}>
+        <button className='soundButton' onClick={soundOnOff} style={{backgroundColor: pos === 'header' ? '#040753':'black',}}>
             {
                 !sound ?
                 <VolumeOffIcon size={40} style={{color: 'white',}}/> : 
