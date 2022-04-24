@@ -4,9 +4,12 @@
     display: flex;
     max-height: 10vh;
     bottom: 92%;
-     left: 85%;
+    left: 85%;
 }
 
 .soundContainer {
     border: none;
+    max-height: 10vh; 
+    bottom: 92%;
+    left: 85%;
 }
