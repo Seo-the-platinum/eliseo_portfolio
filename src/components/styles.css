@@ -208,6 +208,13 @@ html, body {
     max-width: 97%;
 }
 
+.projectDescription {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60%;
+}
+
 .projectLinks {
     display: flex;
     justify-content: space-evenly;
@@ -294,6 +301,10 @@ html, body {
     .project > img{
         width: 75%;
     }
+
+    .projectLinks {
+        min-width: 50%;
+    }
 }
 
 @media screen and (min-width: 1025px) {
@@ -324,5 +335,9 @@ html, body {
 
     .project > img{
         width: 75%;
+    }
+
+    .projectLinks {
+        min-width: 50%;
     }
 }

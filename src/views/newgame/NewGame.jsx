@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Loading from '../loading/Loading'
 import SoundButton from '../../features/sound/SoundButton'
 import { useSelector } from 'react-redux'
