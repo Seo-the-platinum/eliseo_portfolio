@@ -193,7 +193,7 @@ html, body {
     display: flex;
     flex-direction: column;
     margin-top: 5%;
-    padding: 5%;
+    padding: 2%;
     max-width: 90%;
 }
 
@@ -209,10 +209,11 @@ html, body {
 }
 
 .projectDescription {
+    align-self: center;
     color: white;
     display: flex;
     flex-wrap: wrap;
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .projectLinks {
